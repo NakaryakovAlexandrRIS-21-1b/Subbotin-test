@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "mocha": "^10.7.3"
+  },
+  "scripts": {
+    "dev": "node sorts",
+    "test": "mocha"
   }
 }
