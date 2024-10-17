@@ -1,6 +1,6 @@
 //1
 
-export const bblSort = arr => {
+ const bblSort = arr => {
 	for (let i = 0; i < arr.length; i++) {
 		for (let j = 0; j < arr.length - i - 1; j++) {
 			if (arr[j] > arr[j + 1]) {
@@ -13,7 +13,7 @@ export const bblSort = arr => {
 	return arr
 }
 
-export const quickSort = arr => {
+ const quickSort = arr => {
 	if (arr.length < 2) return arr
 	let pivot = arr[0]
 	const left = []
@@ -29,7 +29,7 @@ export const quickSort = arr => {
 	return quickSort(left).concat(pivot, quickSort(right))
 }
 
-export const mergeSort = arr => {
+ const mergeSort = arr => {
   if (arr.length < 2) return arr;
   const mid = Math.floor(arr.length / 2);
   const l = mergeSort(arr.slice(0, mid));
@@ -45,7 +45,9 @@ var arr = [234, 43, 55, 63, 5, 6, 235, 547]
 
 
 //2
-const a = 1
-const b = 2
-b, a = a, b
-console.log(a,b)
+let a = 1
+let b = 2
+b = [b, a]
+a = b[0]
+b = b[1]
+console.log(a, b)
