@@ -57,3 +57,5 @@ describe('merge time test', function () {
 		assert.equal(time < 1, res)
 	})
 })
+
+
